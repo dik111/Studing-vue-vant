@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import cellView from '../views/cell'
 import Category from '../views/Category'
+import Categorylist from '@/views/Categorylist'
 Vue.use(VueRouter)
 
 const routes = [
@@ -26,6 +27,11 @@ const routes = [
     path: '/category',
     name: 'category',
     component: Category
+  },
+  {
+    path: '/categoryList/:id',
+    name: 'Categorylist',
+    component: Categorylist
   }
 ]
 
